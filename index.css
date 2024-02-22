@@ -485,6 +485,7 @@ svg{
     position: fixed;
     top: 0;
     background-color: rgb(43, 48, 45);
+    margin-right: -10px;
 }
 .cn img{
     width: 35px;
