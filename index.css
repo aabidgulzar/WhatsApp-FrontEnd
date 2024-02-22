@@ -1,0 +1,699 @@
+*{
+    margin: 0;
+}
+html{
+    overflow-x: hidden;
+}
+
+body{
+    background-color: rgb(19, 19, 19);
+    color: white;
+    min-width: 350px;
+    font-family: sans-serif;
+    margin-right: -10px;
+    height: 100%;
+    overflow-x: hidden;
+}
+#chatsScreen{
+    display: none;
+}
+#header{
+    background-color: rgb(43, 48, 45);
+}
+svg{
+    width: 25px;
+    height: 25px;
+    margin-inline: 10px;
+    border: 5px solid rgba(0, 0, 0, 0);
+    border-radius: 500px;
+    padding: 5px;
+    transition: .3s;
+}
+svg:hover{
+    background-color: rgba(245, 222, 179, 0.151);
+}
+#header{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    overflow: hidden;
+}
+
+
+#hicons{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    margin: 10px;
+}
+.headerico{
+    margin-top: -10px;
+}
+#hicons span{
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+#statusbar{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+}
+
+#statusbar svg{
+    width: 20px;
+    height: 20px;
+    margin-top: -10px;
+    border-radius: 0px;
+}
+
+#statusbar span{
+    margin-bottom: 0;
+    padding: 5px;
+}
+
+#statusbar svg path:hover{
+    fill: #00b150;
+    border-bottom: 3px solid #00b150;
+}
+#statusbar svg:hover{
+    border-bottom: 3px solid #00b150;
+}
+#statusbar span:hover{
+    color: #00b150;
+    background-color: rgba(245, 222, 179, 0.151);
+    border-bottom: 3px solid #00b150;
+}
+#chatsScreen{
+    display: flex;
+    flex-direction: column;
+}
+#chats{
+    display: flex;
+    flex-direction: column;
+    height: 70px;
+    flex-wrap: nowrap;
+    transition: .3s;
+}
+#chats div{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+#chats img{
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    border-radius: 500px;
+}
+#chats header{
+    text-overflow: ellipsis;
+    display: flex;
+    justify-content: space-between;
+}
+
+#chats span{
+    width: 100vw;
+    margin-left: 70px;
+    text-overflow: ellipsis;
+    color: rgb(105, 105, 105);
+}
+
+i{
+    margin-inline: 20px;
+    margin-top: 10px;
+    color: rgb(105, 105, 105);
+}
+
+header #name{
+    margin-inline: 0;
+    margin-top: -55px;
+    margin-left: 71px;
+}
+
+#chats:hover{
+    background-color: rgba(82, 82, 82, 0.616);
+}
+#addmorechat{
+    position: fixed;
+    width: 80vw;
+    top: 20%;
+}
+
+#addchat{
+    position: fixed;
+    background-color: #3fa06a;
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+    top: 90%;
+    left: 80%;
+}
+
+#addchat svg{
+    border-radius: 0;
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+}
+#communityScreen{
+    display: none;
+}
+
+#communityScreen div{
+    margin: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#communityScreen span{
+    margin: 1rem;
+}
+
+#communityScreen h1{
+    font-size: 1.3rem;
+}
+
+.eg{
+    color: #00b150;
+    cursor: pointer;
+}
+
+.eg:hover{
+    text-decoration: underline;
+}
+
+#communityScreen button{
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: #308857;
+    border: 0;
+    padding-inline: 2rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    border-radius: 30px;
+}
+
+#communityScreen button:hover{
+    background-color: #30885886;
+}
+
+#updatesScreen{
+    display: none;
+    flex-direction: column;
+}
+
+#updatesScreen img{
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+}
+.st{
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;
+}
+
+.st h1{
+    font-size: 1.3rem;
+}
+.stat{
+    display: flex;
+}
+.stat span{
+    margin: .5rem;
+    font-weight: 600;
+}
+.one{
+    margin-left: 3.5rem;
+    margin-top: -1.2rem;
+    color: rgb(105, 105, 105);
+}
+
+
+.vru{
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;
+    color: rgb(105, 105, 105);
+    font-weight: 600;
+}
+
+.down{
+    margin-right: 25px;
+}
+
+.st2{
+    margin-inline: 1rem;
+    margin-bottom: 1rem;
+}
+
+hr{
+    height: 1px;
+    border: 0;
+    background-color: rgb(39, 39, 39);
+    margin-bottom: 1rem;
+}
+
+.channels{
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;
+}
+
+.channels h1{
+    font-size: 1.3rem;
+}
+.channels svg{
+    margin-top: -.5rem;
+}
+.two{
+    margin-inline: 1rem;
+    color: rgb(105, 105, 105);
+}
+
+.cards{
+    display: flex;
+    margin: 1rem;
+    overflow-x: scroll;
+}
+
+.cardt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    border: 1px solid rgb(39, 39, 39);
+    border-radius: 10px;
+    margin-inline: 10px;
+    flex-wrap: nowrap;
+}
+.cardt span{
+    margin: .5rem;
+}
+.cardt img{
+    margin: .5rem;
+}
+.cardt button{
+    margin: .5rem;
+    background-color: rgba(24, 73, 46, 0.432);
+    border: 0;
+    border-radius: 20px;
+    padding-inline: 1rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    color: white;
+}
+.cardt button:hover{
+    background-color: rgba(26, 114, 65, 0.432);
+}
+
+.but{
+    padding: .5rem 1rem .5rem 1rem;
+    width: 150px;
+    margin-inline: 1rem;
+    background-color: #417e5c;
+    border: 0;
+    border-radius: 30px;
+}
+.but:hover{
+    background-color: #417e5ca1;
+}
+.f1{
+    position: fixed;
+    top: 80%;
+    left: 80%;
+    background-color: rgb(65, 65, 65);
+    border-radius: 10px;
+}
+.f2{
+    position: fixed;
+    top: 89%;
+    left: 78.6%;
+    background-color: #3c9464;
+    padding: .7rem;
+    border-radius: 10px;
+}
+
+.f1:hover{
+    background-color: gray;
+}
+
+.f2:hover{
+    background-color: #3c946362;
+}
+
+
+#callsScreen{
+    display: none;
+    flex-direction: column;
+    margin: 1rem;
+}
+
+.link{
+    display: flex;
+    padding: 10px;
+    margin-inline: -15px;
+    transition: .3s;
+}
+.link:hover{
+    background-color: rgba(82, 82, 82, 0.616);
+}
+.lk{
+    display: flex;
+    flex-direction: column;
+}
+
+.cc{
+    font-weight: 600;
+}
+
+.cs{
+    font-size: .9rem;
+    color: rgb(105, 105, 105);
+}
+
+.ch{
+    background-color: #43a06d;
+    margin-top: -10px;
+    margin-left: -5px;
+}
+.ch:hover{
+    background-color: #255f3f;
+}
+
+.abc{
+    color: rgb(105, 105, 105);
+    align-self: center;
+    justify-self: center;
+    margin-top: 35vh;
+    margin-inline: 2rem;
+    text-align: center;
+}
+
+.bcc{
+    width: 20px;
+    height: 20px;
+    margin-bottom: -8px;
+    margin-inline: 0;
+    padding: 0;
+}
+.bcc:hover{
+    background-color: transparent;
+}
+
+.addc{
+    background-color: #3bc478;
+    border-radius: 10px;
+    padding: .8rem;
+    width: 20px;
+    height: 20px;
+    position: fixed;
+    top: 80%;
+    left: 80%;
+}
+.addc:hover{
+    background-color: #3bc479a2;
+}
+
+::-webkit-scrollbar{
+    width: 1px;
+}
+
+svg{
+    cursor: pointer;
+}
+
+#addchat:hover{
+    background-color: #00b15048;
+}
+#addchat svg{
+    background-color: transparent;
+}
+#addmorechat{
+    display: none;
+    margin-bottom: 5rem;
+}
+#addmorechat form{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(105, 105, 105, 0.315);
+    width: 100vw;
+    height: 400px;
+    justify-content: space-between;
+    margin-inline: 3rem;
+    border-radius: 20px;
+    padding-inline: 20px;
+}
+#addmorechat form input:first-child{
+    margin-top: 10px;
+}
+#addmorechat form input{
+    padding: .5rem;
+    font-size: 1.2rem;
+    border-radius: 100px;
+    border: 0px;
+    background-color: rgba(128, 128, 128, 0.397);
+}
+
+#addmorechat form button{
+    border: 0;
+    align-self: flex-end;
+    margin-top: -80px;
+    padding: .3rem;
+    margin-inline: 1rem;
+    margin-bottom: .4rem;
+    background-color: #00b150;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: white;
+    border-radius: 10px;
+}
+
+#addmorechat form button:active{
+    background-color: #00b15086;
+}
+.cn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    background-color: rgb(43, 48, 45);
+}
+.cn img{
+    width: 35px;
+    height: 35px;
+    border-radius: 100px;
+}
+.messageHinfo{
+    display: flex;
+}
+.messageHinfo span{
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin: .5rem;
+}
+.messageHinfo svg:first-child {
+    width: 20px;
+    height: 20px;
+    margin-inline: 0;
+    border-radius: 0;
+    margin: 0;
+}
+.messageHinfo svg{
+    width: 10px;
+    height: 10px;
+    padding: .3rem;
+    margin: 0;
+}
+.disabledOptions{
+    display: flex;
+}
+.disabledOptions i{
+    background-color: yellow;
+    width: 20px;
+    height: 20px;
+    margin-inline: 0;
+    margin: .2rem;
+}
+.messageBody{
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    background-color: #00b150;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    overflow: scroll;
+    top: 60px;
+    background-image: url(whatsapp.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.messageBody .today{
+    align-self: center;
+    margin: .5rem;
+    background-color: rgb(43, 48, 45);
+    padding: .3rem;
+    border-radius: 7px;
+}
+
+.messageBody .enc{
+    align-self: center;
+    text-align: center;
+    margin-inline: 1rem;
+    padding: .3rem;
+    background-color: rgb(43, 48, 45);
+    border-radius: 7px;
+    color: rgb(255, 196, 0);
+}
+.enc:hover{
+    background-color: black;
+}
+.messageBody .body{
+    display: flex;
+    flex-direction: column;
+}
+.body .sent:first-child{
+    margin-top: 1rem;
+}
+.body .sent{
+    align-self: flex-end;
+    margin-inline: .5rem;
+    margin-bottom: .2rem;
+    margin-left: 40%;
+    background-color: #286e47;
+    padding: .5rem;
+    border-radius: 7px;
+    font-size: 1.2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+.sent:hover{
+    background-color: #286e47b6;
+}
+.body .recieved{
+    align-self: flex-start;
+    margin-inline: .5rem;
+    margin-bottom: .2rem;
+    margin-right: 40%;
+    background-color: rgb(43, 56, 52);
+    padding: .5rem;
+    border-radius: 7px;
+    font-size: 1.2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+.recieved:hover{
+    background-color: black;
+}
+.body .recieved:last-child{
+    margin-bottom: 7rem;
+}
+
+.writeMessage{
+    display: flex;
+    align-items: center;
+    position: fixed;
+    width: 100vw;
+    height: 40px;
+    top: 93%;
+    background-color: rgb(43, 56, 52);
+    border-radius: 100px;
+}
+.writeMessage i{
+    background-color: transparent;
+    width: 20px;
+    height: 20px;
+    margin: 0px;
+    
+}
+
+.lockS{
+    width: 10px;
+    height: 10px;
+    margin-inline: 0;
+    margin-bottom: -4px;
+    border-radius: 0;
+    padding: 0;
+}
+.lockS:hover{
+    background-color: transparent;
+}
+
+#lil{
+    width: 20px;
+    height: 20px;
+    margin: 0;
+}
+.writeMessage input{
+    outline: none;
+    background-color: rgb(43, 56, 52);
+    border: 0;
+    color: white;
+    font-size: 1.2rem;
+}
+
+
+.lil:last-child{
+    width: 30px;
+    height: 30px;
+    padding: .2rem;
+    background-color: #00b150;
+    border-radius: 200px;
+}
+.body .sent span{
+    color: rgb(180, 163, 163);
+    font-size: .9rem;
+    align-self: flex-end;
+    justify-self: flex-end;
+    margin-inline: 10px;
+}
+
+.body .recieved span{
+    color: rgb(180, 163, 163);
+    font-size: .9rem;
+    align-self: flex-end;
+    justify-self: flex-end;
+    margin-inline: 10px;
+}
+
+#see{
+    margin: 0;
+    width: 25px;
+    height: 25px;
+    padding: 0;
+    margin-bottom: -8px;
+    margin-right: -8px;
+    border: 0;
+    border-radius: 0;
+    color: rgb(69, 184, 230);
+}
+
+.writeMessage{
+    justify-content: space-between;
+}
+
+.writeMessage .sub{
+    border: 0;
+    border-radius: 100px;
+    padding: .7rem;
+    margin-right: -1px;
+}
+
+.writeMessage .sub:hover{
+    background-color: #00b1507e;
+}
+.recieved:first-child{
+    margin-top: 10px;
+}
