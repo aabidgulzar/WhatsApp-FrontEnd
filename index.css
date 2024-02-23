@@ -616,10 +616,11 @@ svg{
 
 .body .recieved span{
     color: rgb(180, 163, 163);
+    font-size: .9rem;
     justify-self: flex-end;
     margin-left: auto;
     padding-inline: 10px;
-    padding-top: 3px;
+    padding-top: 7px;
 }
 
 
@@ -697,7 +698,7 @@ svg{
 
 .writeMessage .sub{
     position: fixed;
-    left: 80vw;
+    left: 83vw;
     border: 0;
     border-radius: 100px;
     padding: .7rem;
