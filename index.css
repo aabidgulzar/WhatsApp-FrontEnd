@@ -440,9 +440,9 @@ svg{
 #addmorechat form{
     display: flex;
     flex-direction: column;
-    background-color: rgba(105, 105, 105, 0.315);
-    width: 100vw;
-    height: 400px;
+    background-color: rgb(77, 77, 77);
+    width: auto;
+    height: 200px;
     justify-content: space-between;
     margin-inline: 3rem;
     border-radius: 20px;
@@ -450,13 +450,17 @@ svg{
 }
 #addmorechat form input:first-child{
     margin-top: 10px;
+    margin-bottom: -5rem;
 }
 #addmorechat form input{
     padding: .5rem;
     font-size: 1.2rem;
     border-radius: 100px;
     border: 0px;
-    background-color: rgba(128, 128, 128, 0.397);
+    margin-top: 0;
+    background-color: white;
+    outline: none;
+    cursor: pointer;
 }
 
 #addmorechat form button{
@@ -471,6 +475,7 @@ svg{
     font-weight: 500;
     color: white;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 #addmorechat form button:active{
@@ -516,11 +521,9 @@ svg{
 .disabledOptions{
     display: flex;
 }
-.disabledOptions i{
-    background-color: yellow;
+.disabledOptions svg{
     width: 20px;
     height: 20px;
-    margin-inline: 0;
     margin: .2rem;
 }
 .messageBody{
@@ -528,7 +531,7 @@ svg{
     align-content: center;
     flex-direction: column;
     background-color: #00b150;
-    width: 100vw;
+    width: 103vw;
     height: 100vh;
     position: fixed;
     overflow: scroll;
@@ -568,7 +571,7 @@ svg{
 }
 .body .sent{
     align-self: flex-end;
-    margin-inline: .5rem;
+    margin-inline: .7rem;
     margin-bottom: .2rem;
     margin-left: 40%;
     background-color: #286e47;
@@ -577,11 +580,9 @@ svg{
     font-size: 1.2rem;
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-end;
+    margin-right: 20px;
 }
-.sent:hover{
-    background-color: #286e47b6;
-}
+
 .body .recieved{
     align-self: flex-start;
     margin-inline: .5rem;
@@ -593,7 +594,6 @@ svg{
     font-size: 1.2rem;
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-end;
 }
 .recieved:hover{
     background-color: black;
@@ -601,6 +601,25 @@ svg{
 .body .recieved:last-child{
     margin-bottom: 7rem;
 }
+
+.body .sent span{
+    color: rgb(180, 163, 163);
+    font-size: .9rem;
+    margin-left: 20%;
+    justify-self: flex-end;
+    margin-left: auto;
+    padding-inline: 10px;
+    padding-top: 3px;
+}
+
+.body .recieved span{
+    color: rgb(180, 163, 163);
+    justify-self: flex-end;
+    margin-left: auto;
+    padding-inline: 10px;
+    padding-top: 3px;
+}
+
 
 .writeMessage{
     display: flex;
@@ -653,21 +672,6 @@ svg{
     background-color: #00b150;
     border-radius: 200px;
 }
-.body .sent span{
-    color: rgb(180, 163, 163);
-    font-size: .9rem;
-    align-self: flex-end;
-    justify-self: flex-end;
-    margin-inline: 10px;
-}
-
-.body .recieved span{
-    color: rgb(180, 163, 163);
-    font-size: .9rem;
-    align-self: flex-end;
-    justify-self: flex-end;
-    margin-inline: 10px;
-}
 
 #see{
     margin: 0;
@@ -680,12 +684,17 @@ svg{
     border-radius: 0;
     color: rgb(69, 184, 230);
 }
-
+#see:hover{
+    background-color: transparent;
+    cursor: default;
+}
 .writeMessage{
     justify-content: space-between;
 }
 
 .writeMessage .sub{
+    position: fixed;
+    left: 80vw;
     border: 0;
     border-radius: 100px;
     padding: .7rem;
@@ -698,3 +707,15 @@ svg{
 .recieved:first-child{
     margin-top: 10px;
 }
+<<<<<<< HEAD
+=======
+
+#nme{
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+#addmorechat{
+    margin-left: -2rem;
+}
+>>>>>>> 6b1ffc4 (fix styling)

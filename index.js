@@ -178,16 +178,17 @@ function createMsgs(bdy,creation,subm,lane1,back1,field,el,th){
         hours = hours ? hours : 12;
         if(y==0){
         createE.setAttribute('class',`sent`);
-        createE.innerHTML = `${creation.value} <span>${hours + ":" + minutes + " " + ampm}<svg id="see" fill="rgb(69, 184, 230)" width="800px" height="800px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="rgb(69, 184, 230)" d="M2.305,11.235a1,1,0,0,1,1.414.024l3.206,3.319L14.3,7.289A1,1,0,0,1,15.7,8.711l-8.091,8a1,1,0,0,1-.7.289H6.9a1,1,0,0,1-.708-.3L2.281,12.649A1,1,0,0,1,2.305,11.235ZM20.3,7.289l-7.372,7.289-.263-.273a1,1,0,1,0-1.438,1.39l.966,1a1,1,0,0,0,.708.3h.011a1,1,0,0,0,.7-.289l8.091-8A1,1,0,0,0,20.3,7.289Z"/></svg></span>`;
+        createE.innerHTML = `<div>${creation.value}</div> <span>${hours + ":" + minutes + " " + ampm}<svg id="see" fill="rgb(69, 184, 230)" width="800px" height="800px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="rgb(69, 184, 230)" d="M2.305,11.235a1,1,0,0,1,1.414.024l3.206,3.319L14.3,7.289A1,1,0,0,1,15.7,8.711l-8.091,8a1,1,0,0,1-.7.289H6.9a1,1,0,0,1-.708-.3L2.281,12.649A1,1,0,0,1,2.305,11.235ZM20.3,7.289l-7.372,7.289-.263-.273a1,1,0,1,0-1.438,1.39l.966,1a1,1,0,0,0,.708.3h.011a1,1,0,0,0,.7-.289l8.091-8A1,1,0,0,0,20.3,7.289Z"/></svg></span>`;
         }
         if(y==1){
         createE.setAttribute('class',`recieved`);
-        createE.innerHTML= `${ creation.value} <span>${hours + ":" + minutes + " " + ampm}</span>`
+        createE.innerHTML= `<div>${creation.value}</div>  <span>${hours + ":" + minutes + " " + ampm}</span>`
         }
         createE.setAttribute('id',`ch${th}`);
         if(creation.value!='')
         bdy.appendChild(createE);
         let mee = document.querySelectorAll(`#ch${th}`);
+        if(mee[mee.length-1]!=undefined)
         el.textContent = mee[mee.length-1].textContent
         creation.value='';
     };
