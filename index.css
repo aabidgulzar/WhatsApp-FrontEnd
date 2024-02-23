@@ -582,7 +582,9 @@ svg{
     flex-wrap: wrap;
     margin-right: 20px;
 }
-
+.body .sent:last-child{
+    margin-bottom: 5rem;
+}
 .body .recieved{
     align-self: flex-start;
     margin-inline: .5rem;
