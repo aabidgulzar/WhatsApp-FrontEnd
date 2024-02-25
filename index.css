@@ -583,7 +583,7 @@ svg{
     margin-right: 20px;
 }
 .body .sent:last-child{
-    margin-bottom: 7rem;
+    margin-bottom: 9rem;
 }
 .body .recieved{
     align-self: flex-start;
@@ -601,7 +601,7 @@ svg{
     background-color: black;
 }
 .body .recieved:last-child{
-    margin-bottom: 7rem;
+    margin-bottom: 9rem;
 }
 
 .body .sent span{
